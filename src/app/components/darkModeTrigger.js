@@ -15,8 +15,8 @@ export function DarkModeSwitch() {
     return (
         <div>
             {mounted && theme == 'dark' ?
-                <MdLightMode className="text-xl hover:text-amber-500" onClick={() => setTheme('light')} />
-                : <BsMoonFill className="text-xl hover:text-amber-500" onClick={() => setTheme('dark')} />
+                <MdLightMode className="text-xl hover:text-amber-500 cursor-pointer" onClick={() => setTheme('light')} />
+                : <BsMoonFill className="text-xl hover:text-amber-500 cursor-pointer" onClick={() => setTheme('dark')} />
             }
         </div>
     )
