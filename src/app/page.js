@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import { Header } from './components/header'
-
+import { Providers } from './providers'
 export default function Home() {
   return (
-    <Header />
+    <Providers>
+
+      <Header />
+    </Providers>
   )
 }
