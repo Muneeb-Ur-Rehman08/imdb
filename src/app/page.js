@@ -12,6 +12,10 @@ export default async function Home({ searchParams }) {
     `https://api.themoviedb.org/3/${url_opt}?api_key=${API_KEY}&language=en-US`,
     { revalidate: 10000 }
   );
+
+  if (!response.ok) {
+    throw new Error("Faild to Fetch")
+  }
   const data = await response.json();
 
   return (
