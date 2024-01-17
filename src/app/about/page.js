@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="max-w-6xl mx-auto space-x-4">
+    <div className="max-w-6xl mx-auto space-y-4 p-4">
       <h2 className="text-2xl font-medium text-amber-600">About</h2>
       <p>
         Starting a blog is an excellent way to build credibility for your brand.
