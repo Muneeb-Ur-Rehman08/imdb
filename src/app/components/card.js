@@ -11,16 +11,16 @@ export default function Card({cardData}) {
                     src={`https://image.tmdb.org/t/p/original/${
                         cardData?.backdrop_path|| cardData?.poster_path
                     }`}
-                    height={300}
                     width={500}
+                    height={300}
                     className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
+                    style={{
+                        maxWidth: '100%',
+                        height: '182px'
+                    }}
                     placeholder="blur"
                     blurDataURL="/spinner.svg"
                     alt="Image is not available"
-                    style={{
-                        maxWidth: '100%',
-                        height: 'auto'
-                    }}
                 />
                 <div className="p-2 ">
                     <p className="line-clamp-2 text-md">{cardData?.overview}</p>
